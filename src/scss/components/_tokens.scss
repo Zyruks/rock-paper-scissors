@@ -1,0 +1,64 @@
+@use "../abstracts/" as *;
+
+.tokens {
+  --rotation: 0;
+  --position-x: 0;
+  --position-y: 0;
+  --border-clr: var(--clr-accent-400);
+  --border-clr-accent: var(--clr-accent-500);
+
+  position: relative;
+
+  border: rem(15) solid var(--border-clr);
+  border-radius: 100%;
+
+  background-color: var(--clr-neutral-100);
+  box-shadow: rem(0) rem(6) 0 rem(0) rgba(0, 0, 0, 15%) inset,
+    rem(0) rem(6) 0 rem(0) var(--border-clr-accent);
+  cursor: pointer;
+
+  inline-size: rem(140);
+  aspect-ratio: 1/1;
+
+  img {
+    margin-inline: auto;
+  }
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+
+    display: block;
+
+    background-color: var(--clr-neutral-600);
+    transform: rotate(var(--rotation));
+
+    content: "";
+    inline-size: rem(20);
+    inset-inline-end: var(--position-x);
+    inset-block-start: var(--position-y);
+    block-size: rem(200);
+  }
+}
+
+.rock {
+  --border-clr: var(--clr-accent-900);
+  --border-clr-accent: var(--clr-accent-800);
+  --rotation: 30deg;
+  --position-y: -80%;
+}
+
+.paper {
+  --border-clr: var(--clr-accent-700);
+  --border-clr-accent: var(--clr-accent-600);
+  --rotation: 150deg;
+  --position-y: 50%;
+}
+
+.scissors {
+  --border-clr: var(--clr-accent-500);
+  --border-clr-accent: var(--clr-accent-400);
+  --rotation: 90deg;
+  --position-x: 100%;
+  --position-y: -40%;
+}

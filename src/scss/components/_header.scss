@@ -1,0 +1,22 @@
+@use "../abstracts/" as *;
+
+.header {
+  align-items: center;
+  justify-content: space-between;
+  border: rem(3) solid var(--clr-neutral-500);
+  border-radius: rem(4);
+  min-inline-size: rem(480);
+  margin-inline: auto;
+  padding-inline: rem(16);
+  padding-block: rem(8);
+  block-size: rem(100);
+
+  .score {
+    padding-inline: rem(25);
+    padding-block: rem(6);
+
+    border-radius: rem(4);
+
+    text-align: center;
+  }
+}
