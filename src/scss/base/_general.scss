@@ -6,4 +6,14 @@ body {
   font-size: var(--fs-400);
   font-family: var(--ff-base);
   line-height: var(--lh-600);
+
+  background-image: getter($gradients, "background");
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    block-size: 100vh;
+    padding-block: rem(50);
+  }
 }

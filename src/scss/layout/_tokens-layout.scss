@@ -1,0 +1,15 @@
+@use "../abstracts/" as *;
+
+.tokens-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  row-gap: rem(40);
+  max-inline-size: rem(418);
+  margin-inline: auto;
+}
+
+.wrapper-rock {
+  grid-row: 2 / 3;
+  grid-column: 1 / -1;
+}

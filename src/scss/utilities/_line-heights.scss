@@ -2,6 +2,6 @@
 
 @each $height-name, $height-value in $line-heights {
   .lh-#{$height-name} {
-    line-height: var(--fw-#{$height-name});
+    line-height: var(--lh-#{$height-name});
   }
 }
