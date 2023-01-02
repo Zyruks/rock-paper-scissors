@@ -1,29 +1,50 @@
+@use "sass:map" as *;
+
 $colors: (
   "primary": (
-    100: hsl(273deg, 53%, 90%),
-    200: hsl(273deg, 53%, 87%),
-    300: hsl(273deg, 53%, 77%),
-    500: hsl(273deg, 53%, 67%),
-    600: hsl(273deg, 53%, 57%),
-    700: hsl(273deg, 53%, 47%),
-    800: hsl(273deg, 53%, 37%),
-    900: hsl(273deg, 53%, 27%),
+    400: hsl(214deg, 47%, 23%),
+    500: hsl(237deg, 49%, 15%),
   ),
   "accent": (
-    200: hsl(39deg, 100%, 50%),
-    300: hsl(39deg, 100%, 45%),
-    400: hsl(39deg, 100%, 40%),
-    500: hsl(39deg, 100%, 35%),
+    400: hsl(39deg, 89%, 49%),
+    500: hsl(40deg, 84%, 53%),
+    600: hsl(230deg, 89%, 62%),
+    700: hsl(230deg, 89%, 65%),
+    800: hsl(349deg, 71%, 52%),
+    900: hsl(349deg, 70%, 56%),
   ),
   "neutral": (
     100: hsl(0deg, 0%, 100%),
-    200: hsl(0deg, 0%, 90%),
-    300: hsl(0deg, 0%, 80%),
-    400: hsl(0deg, 0%, 70%),
-    500: hsl(0deg, 0%, 60%),
-    600: hsl(0deg, 0%, 50%),
-    700: hsl(0deg, 0%, 40%),
-    800: hsl(0deg, 0%, 30%),
-    900: hsl(0deg, 0%, 20%),
+    400: hsl(229deg, 64%, 46%),
+    500: hsl(217deg, 16%, 45%),
+    600: hsl(229deg, 25%, 31%),
   ),
+);
+$gradients: (
+  "tokens": (
+    "rock":
+      linear-gradient(
+        90deg,
+        map-get($colors, "accent", 800),
+        map-get($colors, "accent", 900)
+      ),
+    "paper":
+      linear-gradient(
+        90deg,
+        map-get($colors, "accent", 600),
+        map-get($colors, "accent", 700)
+      ),
+    "scissors":
+      linear-gradient(
+        90deg,
+        map-get($colors, "accent", 400),
+        map-get($colors, "accent", 500)
+      ),
+  ),
+  "background":
+    linear-gradient(
+      180deg,
+      map-get($colors, "primary", 400),
+      map-get($colors, "primary", 500)
+    ),
 );

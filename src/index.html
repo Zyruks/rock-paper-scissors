@@ -40,32 +40,66 @@
     <!-- favicon responsive end-->
 
     <!-- google stuff -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- google stuff end-->
 
     <!-- styles -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <!-- styles end -->
   </head>
 
   <body>
     <div class="container">
-      <div class="headings">
-        <h1 class="primary-heading">Heading</h1>
-        <h2 class="secondary-heading">Heading</h2>
-        <h3 class="third-heading">Heading</h3>
-        <h4>Heading</h4>
-        <h5>Heading</h5>
-        <h6>Heading</h6>
-      </div>
-      <div>
-        <p class="fs-body">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore
-          provident, numquam ipsam facere molestias vel ea porro, quisquam sed,
-          impedit ex magnam adipisci laboriosam cupiditate perspiciatis
-          voluptatem necessitatibus. At, exercitationem?
+      <header class="header flex-group">
+        <p class="fs-500 lh-100 txt-neutral-100 uppercase fw-700">
+          rock <br />
+          paper <br />
+          scissors
         </p>
-      </div>
+        <div class="score | bg-neutral-100">
+          <p>score</p>
+          <h2 id="score" class="fs-700 txt-neutral-600">12</h2>
+        </div>
+      </header>
+      <main>
+        <div class="tokens-container">
+          <div class="wrapper-paper">
+            <button class="tokens paper">
+              <img
+                src="./assets/svg/icon-paper.svg"
+                alt="hand shape like a paper"
+              />
+            </button>
+          </div>
+          <div class="wrapper-scissors">
+            <button class="tokens scissors">
+              <img
+                src="./assets/svg/icon-scissors.svg"
+                alt="hand shape like a scissor"
+              />
+            </button>
+          </div>
+
+          <div class="wrapper-rock">
+            <button class="tokens rock">
+              <img
+                src="./assets/svg/icon-rock.svg"
+                alt="hand shape like a rock"
+              />
+            </button>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="rules-container">
+          <button class="rules">rules</button>
+        </div>
+      </footer>
     </div>
     <script src="./scripts/script.js"></script>
   </body>
