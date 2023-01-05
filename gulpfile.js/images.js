@@ -40,8 +40,8 @@ function imageCompiler() {
 }
 
 function faviconCompiler() {
-  return src("src/assets/**/favicons/*.{jpg,png,gif,webp,avif,heif,tiff,svg}")
-    .pipe(newer("public/assets"))
+  return src("src/assets/favicons/*.{jpg,png,gif,webp,avif,heif,tiff,svg}")
+    .pipe(newer("public/assets/favicons"))
     .pipe(
       responsive({
         formats: [
@@ -78,7 +78,7 @@ function faviconCompiler() {
     )
 
     .pipe(size({ title: "images", showFiles: true, pretty: true }))
-    .pipe(dest("public/assets"));
+    .pipe(dest("public/assets/favicons"));
 }
 
 exports.imageTask = imageCompiler;
