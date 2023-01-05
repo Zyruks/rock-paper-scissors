@@ -60,7 +60,7 @@ Users should be able to:
 
 ### What I learned
 
-I have improve my knowledge in javascript class and how to work with method more in depth.
+I have improve my knowledge in javascript classes and how to work with method more in depth.
 
 I learn about the localStorage property. It was a requirement to maintain the score after refreshing or closing the tab was really intuitive but is the first time using it.
 
@@ -70,7 +70,7 @@ I want to improve the code and change the setTimeout for Promises but i need to 
 
 ### Useful resources
 
-- [Javascript Classes](https://javascript.info/class) - I use Object Oriented programming if you like this way you can read more about classes in this website
+- [Javascript Classes](https://javascript.info/class) - I use Object Oriented programming, if you want to learn more about it  you can read about  classes in this website
 - [Object Oriented Programins](https://www.geeksforgeeks.org/introduction-object-oriented-programming-javascript/) - More about OOP.
 
 ## Author
