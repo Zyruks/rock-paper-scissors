@@ -21,26 +21,6 @@ $colors: (
   ),
 );
 $gradients: (
-  "tokens": (
-    "rock":
-      linear-gradient(
-        90deg,
-        map-get($colors, "accent", 800),
-        map-get($colors, "accent", 900)
-      ),
-    "paper":
-      linear-gradient(
-        90deg,
-        map-get($colors, "accent", 600),
-        map-get($colors, "accent", 700)
-      ),
-    "scissors":
-      linear-gradient(
-        90deg,
-        map-get($colors, "accent", 400),
-        map-get($colors, "accent", 500)
-      ),
-  ),
   "background":
     linear-gradient(
       180deg,

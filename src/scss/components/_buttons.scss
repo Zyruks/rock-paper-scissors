@@ -1,11 +1,6 @@
 @use "../abstracts/" as *;
 
-.rules-container {
-  display: grid;
-  place-items: center;
-}
-
-.rules {
+.btn {
   border: rem(2) solid var(--clr-neutral-500);
   border-radius: rem(10);
 
@@ -16,8 +11,13 @@
 
   padding-block: rem(10);
   padding-inline: rem(40);
+  cursor: pointer;
+
+  transition: background-color 300ms ease-in-out, color 300ms ease-in;
 
   &:hover {
+    color: var(--clr-accent-900);
+
     background-color: var(--clr-neutral-500);
   }
 }
