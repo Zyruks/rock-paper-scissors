@@ -46,6 +46,8 @@
   border: rem(15) solid var(--border-clr);
   border-radius: 100%;
 
+  color: transparent;
+
   background-color: var(--clr-neutral-100);
   box-shadow: rem(0) rem(6) 0 rem(0) rgba(0, 0, 0, 15%) inset,
     rem(0) rem(6) 0 rem(0) var(--border-clr-accent);
