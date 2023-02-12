@@ -9,10 +9,11 @@ class Players {
    * The pick method takes in a token as an argument and assigns the choice variable to the token's id
    * @param token - The id of the token that the user has clicked on.
    */
-  pick(token) {
+  async pick(token) {
     if (this.choice.length === 0) {
       this.choice = tokens[token].getAttribute("id");
       console.log(`User: ${this.choice}`);
+      return this.choice;
     }
   }
 

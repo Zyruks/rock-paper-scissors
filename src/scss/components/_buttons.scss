@@ -21,3 +21,12 @@
     background-color: var(--clr-neutral-500);
   }
 }
+
+.btn-primary {
+  display: flex;
+  flex-direction: column;
+
+  color: hsl(0deg, 0%, 100%);
+
+  background-color: hsl(0deg, 0%, 100%);
+}
